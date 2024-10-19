@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
+	<script>
+       function newText(){
+		const input = document.getElementById("input");
+		const element = document.getElementById("title");
+		element.textContent = input.value;
+	   }
+	</script>
 	<body>
-		<h1>Hello world!</h1>
+		<h1 id="title">Hello world!</h1>
 		<p>super</p>
+		<input type="text" id="input">
+		<button onclick="newText()">press</button>
 	</body>
 </html>
