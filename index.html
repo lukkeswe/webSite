@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<script>
-       function newText(){
+       function newTextTitle(){
 		const input = document.getElementById("input");
 		const element = document.getElementById("title");
+		element.textContent = input.value;
+	   }
+	   function newTextBread() {
+		const input = document.getElementById("input");
+		const element = document.getElementById("bread");
 		element.textContent = input.value;
 	   }
 	</script>
 	<body>
 		<h1 id="title">Hello world!</h1>
-		<p>super</p>
+		<p id="bread">super</p>
 		<p>this is awesome !</p>
 		<input type="text" id="input">
-		<button onclick="newText()">press</button>
+		<button onclick="newTextTitle()">press</button>
+		<button onclick="newTextBread()"></button>
 	</body>
 </html>
