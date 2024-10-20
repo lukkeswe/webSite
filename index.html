@@ -18,11 +18,23 @@
 	   }
 	</script>
 	<body>
-		<h1 id="title">Hello world!</h1>
-		<p id="bread">super</p>
-		<p>This is awesome!</p>
-		<input type="text" id="input">
-		<button onclick="newTextTitle()">Change title</button>
-		<button onclick="newTextBread()">Change bread</button>
+		<div id="firstDiv">
+		    <h1 id="title">Hello world!</h1>
+	        <p id="bread">super</p>
+		    <p>This is awesome!</p>
+		    <input type="text" id="input">
+		    <button onclick="newTextTitle()">Change title</button>
+		    <button onclick="newTextBread()">Change bread</button>
+		</div>
+		<div id="secondDiv">
+			<form id="colorForm">
+				<input type="radio" value="red">赤
+				<input type="radio" value="blue">青
+				<input type="radio" value="green">緑
+				<br>
+				<button>Change color</button>
+			</form>
+
+		</div>
 	</body>
 </html>
