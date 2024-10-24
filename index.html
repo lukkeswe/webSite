@@ -11,9 +11,11 @@
 		const element = document.getElementById("bread");
 		element.textContent = input.value;
 	   }
-	   function changeColor(elementId, color){
+	   function changeColor(elementId){
 		const element = document.getElementById(elementId);
-		element.style.color = color;
+		const color = document.getElementById('colorForm');
+
+		element.style.color = color.value;
 
 	   }
 	</script>
@@ -28,11 +30,11 @@
 		</div>
 		<div id="secondDiv">
 			<form id="colorForm">
-				<input type="radio" value="red">赤
-				<input type="radio" value="blue">青
-				<input type="radio" value="green">緑
+				<input type="radio" name="color" value="red">赤
+				<input type="radio" name="color" value="blue">青
+				<input type="radio" name="color" value="green">緑
 				<br>
-				<button>Change color</button>
+				<button onclick="changeColor('firstDiv')">Change color</button>
 			</form>
 
 		</div>
